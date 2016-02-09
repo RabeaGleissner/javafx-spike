@@ -12,11 +12,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        CounterButton counterButton = new CounterButton();
         Button button = new Button();
         button.setText("Click here");
         Label label = new Label();
-        button.setOnAction(e -> counterButton.updateCounter(label));
+        CounterButton counterButton = new CounterButton(label);
+        button.setOnAction(e -> counterButton.updateCounter());
 
         GridPane root = new GridPane();
         root.setAlignment(Pos.CENTER);

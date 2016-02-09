@@ -1,10 +1,8 @@
-import javafx.scene.control.Label;
-
 public class CounterButton {
     private int counter = 1;
-    private Label label;
+    private LabelInterface label;
 
-    public CounterButton(Label label) {
+    public CounterButton(LabelInterface label) {
         this.label = label;
     }
 
@@ -13,4 +11,7 @@ public class CounterButton {
         counter++;
     }
 
+    public int getCounter() {
+        return counter;
+    }
 }

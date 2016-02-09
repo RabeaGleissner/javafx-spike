@@ -20,38 +20,3 @@ public class CounterButtonTest {
         assertEquals("1", myFakeLabel.updatedText());
     }
 }
-
-
-interface  LabelInterface {
-    void setText(String s);
-}
-
-class MyJavaFXLabel implements LabelInterface {
-    private Label label;
-
-    public MyJavaFXLabel() {
-        this.label = new Label();
-    }
-
-    @Override
-    public void setText(String text) {
-        label.setText(text);
-    }
-
-    public Label actualLabel() {
-        return label;
-    }
-}
-
-class MyFakeLabel implements LabelInterface {
-    private String text;
-
-    @Override
-    public void setText(String s) {
-        text = s;
-    }
-
-    public String updatedText() {
-        return text;
-    }
-}

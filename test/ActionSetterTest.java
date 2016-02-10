@@ -1,4 +1,5 @@
 import javafx.embed.swing.JFXPanel;
+import javafx.scene.control.Button;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class ActionSetterTest {
     public void labelUpdatesAfterClickOnButton() {
         MyFakeLabel fakeLabel = new MyFakeLabel();
         ActionSetter actionSetter = new ActionSetter(new LabelUpdater(fakeLabel));
-        MyJavaFXButton button = new MyJavaFXButton();
+        MyJavaFXButton button = new MyJavaFXButton(new Button());
         actionSetter.addClickHandler(button);
         button.actualButton().fire();
         assertEquals("1", fakeLabel.updatedText());

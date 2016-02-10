@@ -6,8 +6,8 @@ import javafx.scene.control.Button;
 public class MyJavaFXButton implements ButtonInterface {
     private Button button;
 
-    public MyJavaFXButton() {
-        this.button = new Button();
+    public MyJavaFXButton(Button button) {
+        this.button = button;
     }
 
     @Override

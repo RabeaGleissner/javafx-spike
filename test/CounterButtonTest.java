@@ -1,4 +1,3 @@
-import javafx.scene.control.Label;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

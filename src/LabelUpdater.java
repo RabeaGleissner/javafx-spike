@@ -1,8 +1,8 @@
-public class CounterButton {
+public class LabelUpdater {
     private int counter = 1;
     private LabelInterface label;
 
-    public CounterButton(LabelInterface label) {
+    public LabelUpdater(LabelInterface label) {
         this.label = label;
     }
 

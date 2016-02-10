@@ -3,7 +3,7 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 
-public class MyJavaFXButton implements  ButtonInterface {
+public class MyJavaFXButton implements ButtonInterface {
     private Button button;
 
     public MyJavaFXButton() {

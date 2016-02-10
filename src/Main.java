@@ -13,8 +13,8 @@ public class Main extends Application {
         MyJavaFXButton button = new MyJavaFXButton();
         button.actualButton().setText("Click here");
         MyJavaFXLabel label = new MyJavaFXLabel();
-        CounterButton counterButton = new CounterButton(label);
-        ActionSetter actionSetter = new ActionSetter(counterButton);
+        LabelUpdater labelUpdater = new LabelUpdater(label);
+        ActionSetter actionSetter = new ActionSetter(labelUpdater);
         actionSetter.addClickHandler(button);
 
         GridPane root = new GridPane();

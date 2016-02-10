@@ -1,14 +1,14 @@
 public class ActionSetter implements ActionSetterInterface {
 
-    private CounterButton counterButton;
+    private LabelUpdater labelUpdater;
 
-    public ActionSetter(CounterButton counterButton) {
-        this.counterButton = counterButton;
+    public ActionSetter(LabelUpdater labelUpdater) {
+        this.labelUpdater = labelUpdater;
     }
 
     @Override
     public void addClickHandler(ButtonInterface button) {
-        button.setOnAction(event -> counterButton.updateCounter());
+        button.setOnAction(event -> labelUpdater.updateCounter());
     }
 
 }
